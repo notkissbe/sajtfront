@@ -14,6 +14,7 @@ export default function Header() {
             <Nav className="me-auto">
               <Nav.Link href="/listazas">Listázás</Nav.Link>
               <Nav.Link href="/kereses">Keresés</Nav.Link>
+              <Nav.Link href="/rendezes">Rendezés</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

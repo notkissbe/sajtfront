@@ -8,12 +8,12 @@ export default function Header() {
     <header>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-          <Navbar.Brand href="#home">Sajtok</Navbar.Brand>
+          <Navbar.Brand href="/listazas">Sajtok</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Listázás</Nav.Link>
-              <Nav.Link href="#link">Keresés</Nav.Link>
+              <Nav.Link href="/listazas">Listázás</Nav.Link>
+              <Nav.Link href="/kereses">Keresés</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

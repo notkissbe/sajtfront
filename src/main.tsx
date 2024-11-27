@@ -4,11 +4,25 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Kereses from "./pages/Kereses";
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Header from "./components/header";
+import Listazas from "./pages/Listazas";
+import Layout from "./pages/Layout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Kereses />,
+    element: <Layout />,
+    children: [
+      {
+        path: "listazas",
+        element: <Listazas />
+      },
+      {
+        path: "kereses",
+        element: <Kereses />
+      }
+    ]
+    
   }
 ]);
 
